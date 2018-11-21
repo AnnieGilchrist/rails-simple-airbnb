@@ -1,0 +1,49 @@
+.banner {
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+.flat-row {
+  position: absolute;
+  top: 320px;
+  margin: 0 30px;
+}
+.flat-card {
+  background-color: rgb(240,240,240);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  h3 {
+    margin-top: 0;
+  }
+}
+.title {
+  padding: 20px;
+  margin: 10px;
+  h1 {
+    margin-top: 0;
+  }
+}
+.description {
+  padding: 20px;
+  margin: 10px;
+  height: 800px;
+}
+.form {
+  padding: 20px;
+  margin: 10px;
+}
+.details {
+  padding: 20px;
+  margin: 10px;
+}
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+}
+
+.background {
+  background-color: white !important;
+}
+

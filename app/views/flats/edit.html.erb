@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Edit <%= @flat.name %></h1>
+  <%= render 'form' %>
+  <hr>
+  <div class="links">
+    <%= link_to "Back to homepage", root_path %>
+    <br>
+    <%= link_to "Back to flat", flat_path(@flat) %>
+  </div>
+</div>

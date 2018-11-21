@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>All our Flats</h1>
+  <p>You searched for . We found 4 flats out of our 4 on our website</p>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-xs-6 col-md-4">
+        <div class="card">
+          <div class="picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/collection/416011/1600x900');">
+
+          </div>
+          <div class="card-description">
+            <h3><%= flat.name %></h3>
+            <p><%= flat.address %></p>
+            <span><i class="far fa-user"></i> <%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></span>
+          </div>
+
+          <div class="card-links">
+            <%= link_to "More info", flat_path(flat) %>
+            <%= link_to "Edit", edit_flat_path(flat) %>
+            <%= link_to "Remove", flat_path(flat),
+              method: :delete,
+              data: { confirm: "Are you sure you want to delete?" } %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

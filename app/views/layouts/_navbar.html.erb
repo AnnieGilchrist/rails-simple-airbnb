@@ -1,0 +1,23 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+    <%= image_tag "logo.png", height: 50 %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+      <!-- Links when logged in -->
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="search" class="sr-only">
+            Search
+          </label>
+          <input type="text" class="from-control" id="search" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <%= link_to "Add Flat", new_flat_path , class: "btn btn-primary" %>
+
+  </div>
+</div>

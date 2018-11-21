@@ -1,0 +1,82 @@
+<div class="banner" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')">
+</div>
+
+  <div class="container">
+    <div class="flat-row">
+
+      <div class="col-xs-6 col-md-8">
+        <div class="title flat-card">
+          <h1>
+            <%= @flat.name %>
+          </h1>
+          <h5>
+            <%= @flat.address %>
+          </h5>
+        </div>
+        <div class="description flat-card">
+          <h3>
+            A bit more about this flat...
+          </h3>
+          <p>
+            <%= @flat.description %>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-md-4">
+        <div class="form flat-card">
+          <form>
+            <div class="form-group">
+              <label for="from" class="sr-only">From</label>
+              <div class="input-group">
+                <div class="input-group-addon">From:</div>
+                <input type="text" class="form-control" id="from" placeholder="12/10/2017">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="to" class="sr-only">To</label>
+              <div class="input-group">
+                <div class="input-group-addon">To:</div>
+                <input type="text" class="form-control" id="to" placeholder="18/10/2017">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Book</button>
+          </form>
+        </div>
+        <div class="details flat-card">
+          <h3>
+            Details
+          </h3>
+          <span>
+            <i class="far fa-user"></i>
+            <%= @flat.number_of_guests %>
+            <i class="fas fa-euro-sign"></i>
+            <%= @flat.price_per_night %>
+          </span>
+        </div>
+        <div class="thumbnails flat-card">
+          <span>
+            Share
+          </span>
+          <div>
+            <ul class="list-inline">
+              <li>
+                <i class="fab fa-facebook-square"></i>
+              </li>
+              <li>
+                <i class="fab fa-twitter-square"></i>
+              </li>
+              <li>
+                <i class="fab fa-pinterest-square"></i>
+              </li>
+              <li>
+                <i class="fas fa-envelope-square"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
